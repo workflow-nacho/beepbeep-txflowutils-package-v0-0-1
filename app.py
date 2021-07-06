@@ -2,8 +2,9 @@ import os
 import json
 import streamlit as st
 from beepbeep_txflowutils.utils.utils import Utilities
-from beepbeep_txflowutils.secrets.config_setting import config_secret
 from source import source
+from beepbeep_txflowutils.secrets.config_setting import config_secret
+
 
 def mainApp():
     """
@@ -62,20 +63,4 @@ def mainApp():
                     st.markdown(md_content)
 
 
-
-if __name__ == "__main__":
-    #obj = StreamlitApp()
-    #root_path = obj._root_path()
-    #md_dir_path = os.path.join(Utilities._root_path(), "markdown")
-    #md_docs_dir_path = os.path.join(md_dir_path, config_secret["folder_render_name"])
-    #md_filename_path = os.path.join(md_docs_dir_path, f"{config_secret['file_render_name']}.md")
-
-    #st.title('Sync from Bigquery to GitHub App')
-
-    #with open(md_filename_path, "r") as read_file:
-    #    rendered_content = read_file.read()
-    #    st.markdown(rendered_content)
-    #assert os.system("streamlit run c:/Users/Nienke/projects/BeepBeepTechnology/sync_from_bq_to_github/app.py")
-    mainApp()
-    #mainAppTest()
-    pass
+mainApp()
